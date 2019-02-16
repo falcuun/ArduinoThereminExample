@@ -20,6 +20,8 @@ void loop(){
     int duration = pulseIn(SENSORT1_ECHO, HIGH);
     int distance_CM = duration / 58;
 
+    tone(BUZZER1_PIN, distance_CM * 100);
+
     delay(10);
 
 }
